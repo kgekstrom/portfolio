@@ -224,7 +224,11 @@ nav ul li a.active {
   border: 1px solid var(--border);
   border-left: 3px solid var(--accent);
   border-radius: 6px;
-  padding: 0.8rem 1rem;
+  padding: 0.65rem 1rem;
+  font-size: 0.88rem;
+  color: var(--primary);
+  font-weight: 500;
+  line-height: 1.5;
 }
 
 .highlight-label {
