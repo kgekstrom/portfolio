@@ -220,12 +220,11 @@ nav ul li a.active {
 }
 
 .highlight-card {
-  background: var(--bg-light);
-  border: 1px solid var(--border);
+  background: var(--primary);
   border-radius: 20px;
   padding: 0.35rem 1.1rem;
   font-size: 0.83rem;
-  color: var(--primary);
+  color: var(--white);
   font-weight: 500;
   line-height: 1.5;
 }
