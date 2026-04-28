@@ -211,6 +211,25 @@ nav ul li a.active {
 }
 .attachment svg { flex-shrink: 0; }
 
+/* ── Floated flyer image ── */
+.flyer-float {
+  float: right;
+  max-width: 210px;
+  width: 100%;
+  margin: 0 0 1.25rem 2rem;
+  border-radius: 6px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+}
+
+@media (max-width: 640px) {
+  .flyer-float {
+    float: none;
+    display: block;
+    max-width: 100%;
+    margin: 0 0 1.25rem 0;
+  }
+}
+
 /* ── Academic course cards ── */
 .course-block {
   margin-bottom: 3rem;
