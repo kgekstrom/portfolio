@@ -276,9 +276,9 @@ nav ul li a.active {
 .flyer-gallery img {
   flex: 1;
   min-width: 0;
-  height: 170px;
-  object-fit: cover;
-  object-position: top;
+  height: 200px;
+  object-fit: contain;
+  background: var(--bg-light);
   border-radius: 6px;
   box-shadow: 0 2px 14px rgba(0,0,0,0.12);
 }
