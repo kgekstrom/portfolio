@@ -262,6 +262,22 @@ nav ul li a.active {
   gap: 1.25rem;
 }
 
+/* ── SAS layout: attachment left | content right ── */
+.sas-layout {
+  display: grid;
+  grid-template-columns: 200px 1fr;
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.sas-attachment .attachment-square {
+  width: 100%;
+}
+
+@media (max-width: 700px) {
+  .sas-layout { grid-template-columns: 1fr; }
+}
+
 /* ── Award panels (below coaching section, full width, two columns) ── */
 .award-grid {
   display: grid;
