@@ -220,11 +220,13 @@ nav ul li a.active {
 }
 
 .highlight-card {
-  background: var(--primary);
-  border-radius: 20px;
-  padding: 0.35rem 1.1rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-left: 3px solid var(--accent);
+  border-radius: 4px;
+  padding: 0.5rem 0.9rem;
   font-size: 0.83rem;
-  color: var(--white);
+  color: var(--primary);
   font-weight: 500;
   line-height: 1.5;
 }
@@ -246,13 +248,41 @@ nav ul li a.active {
   .highlights-grid { grid-template-columns: 1fr; }
 }
 
+/* ── Flyer column (floats right, stacks flyer + attachment) ── */
+.flyer-col {
+  float: right;
+  margin: 0 0 1.25rem 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 230px;
+}
+
+/* ── Attachment square (below flyer) ── */
+.attachment-square {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 0.55rem 0.85rem;
+  font-size: 0.8rem;
+  color: var(--primary);
+  text-decoration: none;
+  width: 100%;
+  margin-top: 0.65rem;
+  line-height: 1.35;
+  transition: background 0.2s;
+}
+.attachment-square:hover { background: var(--border); text-decoration: none; }
+.attachment-square svg { flex-shrink: 0; }
+
 /* ── Stacked overlapping flyers ── */
 .flyer-stack {
-  float: right;
   position: relative;
   width: 230px;
   height: 300px;
-  margin: 0 0 1.25rem 2rem;
 }
 
 .flyer-stack .flyer-back {
