@@ -246,6 +246,42 @@ nav ul li a.active {
   .highlights-grid { grid-template-columns: 1fr; }
 }
 
+/* ── Stacked overlapping flyers ── */
+.flyer-stack {
+  float: right;
+  position: relative;
+  width: 230px;
+  height: 300px;
+  margin: 0 0 1.25rem 2rem;
+}
+
+.flyer-stack .flyer-back {
+  position: absolute;
+  width: 185px;
+  top: 10px;
+  right: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+  transform: rotate(3deg);
+}
+
+.flyer-stack .flyer-front {
+  position: absolute;
+  width: 175px;
+  bottom: 0;
+  left: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.22);
+  transform: rotate(-2deg);
+}
+
+@media (max-width: 640px) {
+  .flyer-stack {
+    float: none;
+    margin: 0 auto 1.25rem;
+  }
+}
+
 /* ── Floated flyer image ── */
 .flyer-float {
   float: right;
