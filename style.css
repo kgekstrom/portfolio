@@ -315,9 +315,9 @@ nav ul li a.active {
 }
 
 .award-grid .award-card:last-child {
-  background: #f8e7f2;
-  border: 1px solid #d47da8;
-  color: #6e2b50;
+  background: #dde8f5;
+  border: 1px solid #92b8d8;
+  color: #1d3c6e;
 }
 
 @media (max-width: 700px) {
