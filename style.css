@@ -86,7 +86,7 @@ nav ul li a.active {
 
 /* ── Page wrapper ── */
 .page-content {
-  max-width: 860px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 3.5rem 2rem 5rem;
 }
@@ -124,7 +124,7 @@ nav ul li a.active {
   gap: 3rem;
   align-items: center;
   padding: 3.5rem 2rem 4rem;
-  max-width: 860px;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
@@ -248,47 +248,6 @@ nav ul li a.active {
   .highlights-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Three-column coaching layout: flyers | content | attachment ── */
-.coaching-layout {
-  display: grid;
-  grid-template-columns: 220px 1fr 160px;
-  gap: 2rem;
-  align-items: start;
-}
-
-.coaching-flyers {
-  /* contains the flyer-stack */
-}
-
-.coaching-content {
-  /* role, bullets, highlights */
-}
-
-.coaching-attachment {
-  padding-top: 0.25rem;
-}
-
-.coaching-attachment .attachment-square {
-  width: 100%;
-}
-
-@media (max-width: 760px) {
-  .coaching-layout {
-    grid-template-columns: 1fr;
-  }
-  .coaching-flyers {
-    display: flex;
-    justify-content: center;
-  }
-  .coaching-attachment {
-    display: flex;
-    justify-content: center;
-  }
-  .coaching-attachment .attachment-square {
-    max-width: 260px;
-  }
-}
-
 /* ── Flyer column (floats right, stacks flyer + attachment) ── */
 .flyer-col {
   float: right;
@@ -328,6 +287,12 @@ nav ul li a.active {
   position: relative;
   width: 230px;
   height: 300px;
+}
+
+/* Float left variant (used for coaching section) */
+.flyer-stack.flyer-left {
+  float: left;
+  margin: 0 2rem 1.25rem 0;
 }
 
 .flyer-stack .flyer-back {
