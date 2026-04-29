@@ -132,6 +132,7 @@ nav ul li a.active {
   position: relative;
   width: 260px;
   flex-shrink: 0;
+  margin-left: -1.5rem;
 }
 
 .hero-photo-wrap::before {
