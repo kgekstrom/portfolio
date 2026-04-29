@@ -248,37 +248,43 @@ nav ul li a.active {
   .highlights-grid { grid-template-columns: 1fr; }
 }
 
-/* ── Three-column coaching layout: flyers | content | attachment ── */
-.coaching-layout {
+/* ── Coaching two-column layout: text left | flyers+button right ── */
+.coaching-grid {
   display: grid;
-  grid-template-columns: 240px 1fr 160px;
+  grid-template-columns: 1fr 300px;
   gap: 2.5rem;
   align-items: start;
 }
 
-.coaching-attachment {
-  padding-top: 0.25rem;
+.coaching-right {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
 }
 
-.coaching-attachment .attachment-square {
-  width: 100%;
+/* ── Award panels (below coaching section, full width, two columns) ── */
+.award-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  margin-top: 1.75rem;
 }
 
-@media (max-width: 800px) {
-  .coaching-layout {
-    grid-template-columns: 1fr;
-  }
-  .coaching-flyers {
-    display: flex;
-    justify-content: center;
-  }
-  .coaching-attachment {
-    display: flex;
-    justify-content: center;
-  }
-  .coaching-attachment .attachment-square {
-    max-width: 260px;
-  }
+.award-card {
+  background: var(--bg-light);
+  border: 1px solid var(--border);
+  border-radius: 6px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  font-weight: 500;
+  color: var(--primary);
+  text-align: center;
+  line-height: 1.5;
+}
+
+@media (max-width: 700px) {
+  .coaching-grid { grid-template-columns: 1fr; }
+  .award-grid { grid-template-columns: 1fr; }
 }
 
 /* ── Flyer column (floats right, stacks flyer + attachment) ── */
@@ -309,7 +315,7 @@ nav ul li a.active {
   text-decoration: none;
   width: 100%;
   min-height: 110px;
-  margin-top: 1.75rem;
+  margin-top: 0;
   line-height: 1.5;
   transition: background 0.2s;
 }
@@ -319,19 +325,13 @@ nav ul li a.active {
 /* ── Stacked overlapping flyers ── */
 .flyer-stack {
   position: relative;
-  width: 230px;
-  height: 300px;
-}
-
-/* Float left variant (used for coaching section) */
-.flyer-stack.flyer-left {
-  float: left;
-  margin: 0 2rem 1.25rem 0;
+  width: 300px;
+  height: 370px;
 }
 
 .flyer-stack .flyer-back {
   position: absolute;
-  width: 185px;
+  width: 235px;
   top: 10px;
   right: 0;
   border-radius: 6px;
@@ -341,7 +341,7 @@ nav ul li a.active {
 
 .flyer-stack .flyer-front {
   position: absolute;
-  width: 175px;
+  width: 225px;
   bottom: 0;
   left: 0;
   border-radius: 6px;
