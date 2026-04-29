@@ -265,17 +265,34 @@ nav ul li a.active {
 /* ── SAS layout: attachment left | content right ── */
 .sas-layout {
   display: grid;
-  grid-template-columns: 200px 1fr;
+  grid-template-columns: 300px 1fr;
   gap: 2.5rem;
   align-items: start;
 }
 
 .sas-attachment .attachment-square {
   width: 100%;
+  min-height: 160px;
+}
+
+.sas-content {
+  text-align: right;
+}
+
+.sas-content ul {
+  list-style-position: inside;
+  padding-left: 0;
+  text-align: right;
+}
+
+.sas-content ul li {
+  text-indent: 0;
 }
 
 @media (max-width: 700px) {
   .sas-layout { grid-template-columns: 1fr; }
+  .sas-content { text-align: left; }
+  .sas-content ul { list-style-position: outside; padding-left: 1.3rem; text-align: left; }
 }
 
 /* ── Award panels (below coaching section, full width, two columns) ── */
@@ -287,13 +304,13 @@ nav ul li a.active {
 }
 
 .award-card {
-  background: var(--bg-light);
-  border: 1px solid var(--border);
+  background: #dde8f5;
+  border: 1px solid #92b8d8;
   border-radius: 6px;
   padding: 1rem 1.25rem;
   font-size: 0.9rem;
   font-weight: 500;
-  color: var(--primary);
+  color: #1d3c6e;
   text-align: center;
   line-height: 1.5;
 }
@@ -320,13 +337,13 @@ nav ul li a.active {
   align-items: center;
   justify-content: center;
   gap: 0.6rem;
-  background: var(--bg-light);
-  border: 1px solid var(--border);
+  background: #e8f2ec;
+  border: 1px solid #9dbfaa;
   border-radius: 6px;
   padding: 1.4rem 1rem;
   font-size: 0.85rem;
   font-weight: 500;
-  color: var(--primary);
+  color: #2d5c3e;
   text-align: center;
   text-decoration: none;
   width: 100%;
@@ -335,14 +352,14 @@ nav ul li a.active {
   line-height: 1.5;
   transition: background 0.2s;
 }
-.attachment-square:hover { background: var(--border); text-decoration: none; }
-.attachment-square svg { width: 26px; height: 26px; flex-shrink: 0; color: var(--accent); }
+.attachment-square:hover { background: #d4e9da; text-decoration: none; }
+.attachment-square svg { width: 26px; height: 26px; flex-shrink: 0; color: #3d7a54; }
 
 /* ── Stacked overlapping flyers ── */
 .flyer-stack {
   position: relative;
   width: 300px;
-  height: 370px;
+  height: 410px;
 }
 
 .flyer-stack .flyer-back {
