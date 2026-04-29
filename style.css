@@ -128,6 +128,7 @@ nav ul li a.active {
   margin: 0 auto;
   border: 2px solid #7b9fd4;
   border-radius: 8px;
+  box-sizing: border-box;
 }
 
 .hero-photo-wrap {
@@ -662,14 +663,11 @@ nav ul li a.active {
   margin: 0 auto;
 }
 
-.about-panel-green {
+.about-section-blue {
   background: #e8eef5;
-  border-radius: 0;
+  margin-left: -2rem;
+  margin-right: -2rem;
   padding: 2rem 2rem;
-  margin-left: calc(-50vw + 50%);
-  margin-right: calc(-50vw + 50%);
-  padding-left: calc(50vw - 50%);
-  padding-right: calc(50vw - 50%);
 }
 
 .about-chapter.section-panel {
