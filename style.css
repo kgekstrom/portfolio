@@ -308,6 +308,26 @@ nav ul li a.active {
   .sas-content { max-width: 100%; margin-left: 0; }
 }
 
+/* ── STEP section layout ── */
+.step-layout {
+  display: grid;
+  grid-template-columns: 1fr 200px;
+  gap: 2rem;
+  align-items: start;
+  margin-bottom: 1.5rem;
+}
+
+.step-photo-wrap {
+  text-align: center;
+}
+
+.step-photo {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+  display: block;
+}
+
 /* ── Award panels (below coaching section, full width, two columns) ── */
 .award-grid {
   display: grid;
@@ -612,6 +632,11 @@ nav ul li a.active {
   max-width: 720px;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
+}
+
+.about-chapter.section-panel {
+  padding: 1.5rem 2.5rem;
+  box-sizing: border-box;
 }
 
 .about-lead {
