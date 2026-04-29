@@ -252,14 +252,14 @@ nav ul li a.active {
 .coaching-grid {
   display: grid;
   grid-template-columns: 1fr 270px;
-  gap: 3.75rem;
+  gap: 5rem;
   align-items: start;
 }
 
 .coaching-right {
   display: flex;
   flex-direction: column;
-  gap: 1.25rem;
+  gap: 2rem;
 }
 
 /* ── SAS layout: attachment left | content right ── */
@@ -275,20 +275,23 @@ nav ul li a.active {
   min-height: 160px;
 }
 
-.sas-content {
-  max-width: 500px;
-  margin-left: auto;
+.sas-photo {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+  object-fit: cover;
+  display: block;
 }
 
-.sas-content .role,
-.sas-content .office {
-  text-align: right;
+.sas-content {
+  max-width: 500px;
 }
+
+
 
 @media (max-width: 700px) {
   .sas-layout { grid-template-columns: 1fr; }
   .sas-content { max-width: 100%; margin-left: 0; }
-  .sas-content .role, .sas-content .office { text-align: left; }
 }
 
 /* ── Award panels (below coaching section, full width, two columns) ── */
