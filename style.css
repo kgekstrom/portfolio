@@ -567,6 +567,73 @@ nav ul li a.active {
   margin-bottom: 0.5rem;
 }
 
+
+/* ── About Me page ── */
+.about-chapter {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 0.5rem 0 1rem;
+}
+
+.about-lead {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: var(--primary);
+  line-height: 1.5;
+  margin-bottom: 0.75rem;
+}
+
+
+/* ── About page photo stack ── */
+.about-chapter-photo {
+  display: grid;
+  grid-template-columns: 1fr 290px;
+  gap: 3.5rem;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 0.5rem 0 1rem;
+}
+
+.about-stack {
+  position: relative;
+  width: 290px;
+  height: 360px;
+  flex-shrink: 0;
+}
+
+.about-stack .about-img-back {
+  position: absolute;
+  width: 220px;
+  top: 0;
+  right: 0;
+  border-radius: 6px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.14);
+  transform: rotate(2.5deg);
+  object-fit: cover;
+}
+
+.about-stack .about-img-front {
+  position: absolute;
+  width: 210px;
+  bottom: 0;
+  left: 0;
+  border-radius: 6px;
+  box-shadow: 0 4px 18px rgba(0,0,0,0.22);
+  transform: rotate(-2deg);
+  object-fit: cover;
+}
+
+@media (max-width: 700px) {
+  .about-chapter-photo {
+    grid-template-columns: 1fr;
+  }
+  .about-stack {
+    margin: 0 auto 1.5rem;
+  }
+}
+
 /* ── Footer ── */
 footer {
   background: var(--primary);
