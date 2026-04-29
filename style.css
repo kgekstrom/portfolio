@@ -275,8 +275,20 @@ nav ul li a.active {
   min-height: 160px;
 }
 
+.sas-content {
+  max-width: 500px;
+  margin-left: auto;
+}
+
+.sas-content .role,
+.sas-content .office {
+  text-align: right;
+}
+
 @media (max-width: 700px) {
   .sas-layout { grid-template-columns: 1fr; }
+  .sas-content { max-width: 100%; margin-left: 0; }
+  .sas-content .role, .sas-content .office { text-align: left; }
 }
 
 /* ── Award panels (below coaching section, full width, two columns) ── */
