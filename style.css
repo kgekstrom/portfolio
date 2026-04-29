@@ -664,7 +664,7 @@ nav ul li a.active {
 }
 
 .about-section-blue {
-  background: #e8eef5;
+  background: #f5f1eb;
   margin-left: -2rem;
   margin-right: -2rem;
   padding: 2rem 2rem;
@@ -673,6 +673,8 @@ nav ul li a.active {
 .about-chapter.section-panel {
   padding: 1.5rem 2.5rem;
   box-sizing: border-box;
+  background: #e8eef5;
+  border-radius: 8px;
 }
 
 .about-chapter p:not(.about-lead) {
