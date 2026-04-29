@@ -510,7 +510,7 @@ nav ul li a.active {
   display: grid;
   grid-template-columns: 200px 1fr;
   gap: 2.5rem;
-  align-items: start;
+  align-items: center;
 }
 
 .course-photo-slot {
@@ -518,13 +518,6 @@ nav ul li a.active {
   aspect-ratio: 3 / 4;
   border-radius: 6px;
   background: #ede9e1;
-  border: 2px dashed #c9c0b0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: #b0a898;
-  font-size: 0.8rem;
-  text-align: center;
   overflow: hidden;
 }
 
@@ -640,6 +633,10 @@ nav ul li a.active {
   max-width: 900px;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
+}
+
+.about-chapter-photo > div:first-child {
+  padding-right: 2rem;
 }
 
 .about-stack {
