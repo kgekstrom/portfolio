@@ -705,7 +705,7 @@ nav ul li a.active {
   grid-template-columns: 1fr 290px;
   gap: 3.5rem;
   align-items: center;
-  max-width: 900px;
+  max-width: 980px;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
 }
