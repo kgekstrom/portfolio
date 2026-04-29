@@ -660,6 +660,12 @@ nav ul li a.active {
   margin: 0 auto;
 }
 
+.about-panel-green {
+  background: #e8f0ec;
+  border-radius: 8px;
+  padding: 1.75rem 2rem;
+}
+
 .about-chapter.section-panel {
   padding: 1.5rem 2.5rem;
   box-sizing: border-box;
