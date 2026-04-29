@@ -275,33 +275,8 @@ nav ul li a.active {
   min-height: 160px;
 }
 
-.sas-content {
-  text-align: right;
-}
-
-.sas-content ul {
-  list-style: none;
-  padding: 0;
-}
-
-.sas-content ul li {
-  text-align: right;
-  margin-bottom: 0.45rem;
-  font-size: 0.97rem;
-}
-
-.sas-content ul li::after {
-  content: " ◂";
-  color: var(--accent);
-  font-size: 0.75rem;
-}
-
 @media (max-width: 700px) {
   .sas-layout { grid-template-columns: 1fr; }
-  .sas-content { text-align: left; }
-  .sas-content ul li { text-align: left; }
-  .sas-content ul li::after { display: none; }
-  .sas-content ul { list-style: disc; padding-left: 1.3rem; }
 }
 
 /* ── Award panels (below coaching section, full width, two columns) ── */
