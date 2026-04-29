@@ -705,13 +705,13 @@ nav ul li a.active {
   grid-template-columns: 1fr 290px;
   gap: 3.5rem;
   align-items: center;
-  max-width: 980px;
+  max-width: 900px;
   margin: 0 auto;
   padding: 0.5rem 0 1rem;
 }
 
 .about-chapter-photo > div:first-child {
-  padding-right: 7rem;
+  padding-right: 6.5rem;
 }
 
 .photo-caption {
