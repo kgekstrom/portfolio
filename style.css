@@ -536,9 +536,9 @@ nav ul li a.active {
 /* ── CLC internship layout (text left, image right) ── */
 .clc-layout {
   display: grid;
-  grid-template-columns: 220px 1fr;
+  grid-template-columns: 280px 1fr;
   gap: 5rem;
-  align-items: start;
+  align-items: center;
   margin-left: 2.5rem;
   margin-right: 2.5rem;
 }
