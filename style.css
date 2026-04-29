@@ -639,6 +639,10 @@ nav ul li a.active {
   box-sizing: border-box;
 }
 
+.about-chapter p:not(.about-lead) {
+  padding-left: 0.75rem;
+}
+
 .about-lead {
   font-family: 'Cormorant Garamond', serif;
   font-size: 1.35rem;
