@@ -552,6 +552,15 @@ nav ul li a.active {
   .clc-layout { grid-template-columns: 1fr; margin-left: 0; margin-right: 0; }
 }
 
+
+/* ── Section panel backgrounds ── */
+.section-panel {
+  background: #f5f1eb;
+  border-radius: 8px;
+  padding: 1.75rem 2rem;
+  margin-bottom: 0.5rem;
+}
+
 /* ── Footer ── */
 footer {
   background: var(--primary);
