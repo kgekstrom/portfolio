@@ -639,6 +639,15 @@ nav ul li a.active {
   padding-right: 2rem;
 }
 
+.photo-caption {
+  font-size: 0.78rem;
+  color: var(--muted);
+  font-style: italic;
+  margin-top: 0.75rem;
+  text-align: center;
+  line-height: 1.4;
+}
+
 .about-stack {
   position: relative;
   width: 300px;
