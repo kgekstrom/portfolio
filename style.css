@@ -269,9 +269,11 @@ nav ul li a.active {
 /* ── SAS layout: attachment left | content right ── */
 .sas-layout {
   display: grid;
-  grid-template-columns: 260px 1fr;
-  gap: 3rem;
+  grid-template-columns: 220px 1fr;
+  gap: 5rem;
   align-items: start;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
 }
 
 .sas-attachment {
@@ -300,7 +302,7 @@ nav ul li a.active {
 
 
 @media (max-width: 700px) {
-  .sas-layout { grid-template-columns: 1fr; }
+  .sas-layout { grid-template-columns: 1fr; margin-left: 0; margin-right: 0; }
   .sas-content { max-width: 100%; margin-left: 0; }
 }
 
@@ -524,6 +526,28 @@ nav ul li a.active {
   border-radius: 0 6px 6px 0;
   color: var(--muted);
   font-style: italic;
+}
+
+
+/* ── CLC internship layout (text left, image right) ── */
+.clc-layout {
+  display: grid;
+  grid-template-columns: 1fr 220px;
+  gap: 5rem;
+  align-items: start;
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
+.clc-photo {
+  width: 100%;
+  border-radius: 6px;
+  box-shadow: 0 2px 14px rgba(0,0,0,0.12);
+  display: block;
+}
+
+@media (max-width: 700px) {
+  .clc-layout { grid-template-columns: 1fr; margin-left: 0; margin-right: 0; }
 }
 
 /* ── Footer ── */
